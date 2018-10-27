@@ -1,19 +1,20 @@
 <template>
-  <golden-layout id="app">
-    <gl-col>
+  <goldenLayout id="app">
+    <glCol>
       <Exchange />
-    </gl-col>
-    <gl-col>
+    </glCol>
+    <glCol>
       <Pairs />
-    </gl-col>
-    <gl-col>
+    </glCol>
+    <glCol>
       <Trades />
-    </gl-col>
-  </golden-layout>
+    </glCol>
+  </goldenLayout>
 </template>
 
 <script>
-  import vgl from 'vue-golden-layout/'
+  import goldenLayout from 'vue-golden-layout'
+  import glCol from 'vue-golden-layout'
   import Exchange from './components/Exchange'
   import Pairs from './components/Pairs'
   import Trades from './components/Trades'
@@ -23,7 +24,8 @@
       Exchange,
       Pairs,
       Trades,
-      vgl
+      goldenLayout,
+      glCol
     }
   }
 
